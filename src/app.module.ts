@@ -14,7 +14,7 @@ import { ConfigModule } from '@nestjs/config';
     ArticlesModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'pg-ck58bk6g2bec73ctfngg-a',
+      host: 'dashboard.render.com/d/dpg-ck58bk6g2bec73ctfngg-a',
       port: 5432,
       username: 'article_manager_db_user',
       password: 'Mi30aj9Nzi0EGgtv7VGc2mvs8E2WL90I',
