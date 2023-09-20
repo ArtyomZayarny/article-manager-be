@@ -14,13 +14,16 @@ import { ConfigModule } from '@nestjs/config';
     ArticlesModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'dashboard.render.com/d/dpg-ck58bk6g2bec73ctfngg-a',
+      host: 'ep-ancient-haze-68914800-pooler.eu-central-1.postgres.vercel-storage.com',
       port: 5432,
-      username: 'article_manager_db_user',
-      password: 'Mi30aj9Nzi0EGgtv7VGc2mvs8E2WL90I',
-      database: 'article_manager_db',
+      username: 'default',
+      password: 'LpayuzO0KQb2',
+      database: 'verceldb',
       autoLoadEntities: true,
       synchronize: true,
+      ssl: {
+        rejectUnauthorized: false,
+      }
     }),
     IamModule,
   ],
